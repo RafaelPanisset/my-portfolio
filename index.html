@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle"></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <select id="languageSelector">
+        <option value="en">English</option>
+        <option value="pt">Português</option>
+    </select>
+
+    <header>
+        <h1 id="headerName"></h1>
+        <p id="headerProfession"></p>
+    </header>
+
+    <nav>
+        <ul id="navList"></ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2 id="aboutTitle"></h2>
+            <p id="aboutContent"></p>
+        </section>
+
+        <section id="projects">
+            <h2 id="projectsTitle"></h2>
+            <div id="projectsList"></div>
+        </section>
+
+        <section id="skills">
+            <h2 id="skillsTitle">Skills</h2>
+            <div class="skills-container" id="skillsList"></div>
+        </section>
+
+        <section id="contact">
+            <h2 id="contactTitle"></h2>
+            <div id="contactInfo" class="contact-info"></div>
+        </section>
+    </main>
+
+    <script src="languageData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
