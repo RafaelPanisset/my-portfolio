@@ -1,3 +1,17 @@
+function getRandomColor() {
+  return '#' + Math.floor(Math.random()*16777215).toString(16);
+}
+
+function addProjectClickListeners() {
+  const projects = document.querySelectorAll('.project');
+  projects.forEach(project => {
+      project.addEventListener('click', () => {
+          project.style.backgroundColor = getRandomColor();
+      });
+  });
+}
+
+
 function updateContent(lang) {
   const data = languageData.languages[lang];
 
@@ -77,6 +91,9 @@ function updateContent(lang) {
     
     contactInfo.appendChild(div);
   });
+
+  addProjectClickListeners();
+
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -88,6 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial content update
   updateContent('en');
 
+
+  addProjectClickListeners();
+
   // Project click event for random background color
   const projects = document.querySelectorAll('.project');
   projects.forEach(project => {
@@ -95,8 +115,4 @@ document.addEventListener('DOMContentLoaded', () => {
           project.style.backgroundColor = getRandomColor();
       });
   });
-
-  function getRandomColor() {
-      return '#' + Math.floor(Math.random()*16777215).toString(16);
-  }
 });
