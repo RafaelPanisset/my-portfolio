@@ -110,14 +110,15 @@ const languageData =
               ]
             },
             "skills": {
-              "title": "Habilidades",
+              "title": "Skills",
               "list": [
-                "C++",
+                "C/C++",
                 "Java",
                 "JavaScript",
                 "Python",
-                "React",
+                "PHP",
                 "Node.js",
+                "Docker",
                 "SQL",
                 "AWS"
               ]
