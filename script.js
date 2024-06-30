@@ -7,13 +7,24 @@ function updateContent(lang) {
 
   const navList = document.getElementById('navList');
   navList.innerHTML = '';
+  const navMapping = {
+    'About': 'about',
+    'Projects': 'projects',
+    'Skills': 'skills',
+    'Contact': 'contact',
+    'Sobre': 'about',
+    'Projetos': 'projects',
+    'Habilidades': 'skills',
+    'Contato': 'contact'
+  };
+  
   data.nav.forEach(item => {
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.href = `#${item.toLowerCase()}`;
-      a.textContent = item;
-      li.appendChild(a);
-      navList.appendChild(li);
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = `#${navMapping[item] || item.toLowerCase()}`;
+    a.textContent = item;
+    li.appendChild(a);
+    navList.appendChild(li);
   });
 
   document.getElementById('aboutTitle').textContent = data.about.title;
