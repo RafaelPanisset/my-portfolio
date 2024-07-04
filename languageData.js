@@ -110,7 +110,7 @@ const languageData =
               ]
             },
             "skills": {
-              "title": "Skills",
+              "title": "Habilidades",
               "list": [
                 "C/C++",
                 "Java",
@@ -127,7 +127,7 @@ const languageData =
               "title": "Contato",
               "email": {
                 "title": "E-mail",
-                "value": "rafaelptmotta@gmail.com"
+                "value": "rafaelpanissetmt@gmail.com"
               },
               "linkedin": {
                 "title": "LinkedIn",
